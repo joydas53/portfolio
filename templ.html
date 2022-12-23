@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>joy test</title>
+
+    <style>
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(20, 17, 24);
+        color: rgb(255, 255, 255);
+        padding: 30px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      /* navbar */
+      header {
+        display: flex;
+        justify-content: space-between;
+      }
+      header section,
+      section ul {
+        display: flex;
+        list-style-type: none;
+      }
+      section ul li {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      header section:first-child {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      a {
+        color: rgb(165, 165, 175);
+        text-decoration: none;
+        text-transform: uppercase;
+        display: flex;
+        font-size: smaller;
+      }
+      /* hero */
+      main div {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 150px;
+      }
+      .dev {
+        position: relative;
+      }
+      .dev::after {
+        position: absolute;
+        content: "";
+        width: 3pt;
+        height: 30%;
+        bottom: 8%;
+        right: 18.5%;
+        background: #556;
+        animation: pulse 1.5s infinite ease-in;
+        border-radius: 50px;
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 0.25;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <section>
+        <img
+          style="border-radius: 50%; border: 3px solid #fff4"
+          src="./images/profile.jpeg"
+          alt=""
+          width="40"
+          height="40"
+        />
+        <p style="font-weight: bold; text-transform: uppercase">profile</p>
+      </section>
+      <section>
+        <nav>
+          <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">feature</a></li>
+            <li><a href="">portfolio</a></li>
+            <li><a href="">resume</a></li>
+            <li><a href="">clients</a></li>
+            <li><a href="">pricing</a></li>
+            <li><a href="">blog</a></li>
+            <li><a href="">contact</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <div>
+        <section
+          style="
+            display: grid;
+            justify-content: space-evenly;
+            padding: 50px 0;
+            width: 40%;
+          "
+        >
+          <p
+            style="
+              text-transform: uppercase;
+              word-spacing: 6px;
+              font-size: smaller;
+            "
+          >
+            welcome to my world
+          </p>
+          <h1 class="dev" style="font-size: 50px">
+            Hi, I'm <span style="color: rgb(250, 1, 63)">Joy Das</span>
+            <br />
+            a Web Developer.
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            veritatis animi aperiam! Nihil atque blanditiis iure. Quam maxime
+            dignissimos nobis ad mollitia modi, id in! Sunt libero consequuntur
+            odio officia.
+          </p>
+        </section>
+        <section style="align-self: flex-end; position: absolute; right: 0">
+          <img src="./images/profile.jpeg" alt="" width="300" />
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
